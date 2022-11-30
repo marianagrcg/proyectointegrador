@@ -1,66 +1,55 @@
-#include "Comprador.h"
-#include "Proveedor.h"
+#include "Comprador.hpp"
+#include "Proveedor.hpp"
 #include <string>
-#include "Producto.h"
 #include <iostream>
-#include "Proveedor.cpp"
 using namespace std;
 
 Comprador::Comprador()
 {
-	nombreComprador = "";
-}; 
+    nombreComprador = "";
+};
 
-Comprador::Comprador(string cNombreComprador, Producto cProducto)
+Comprador::Comprador(string cNombreComprador, Proveedor cProducto)
 {
-	nombreComprador = cNombreComprador;
-	producto = cProducto;
+    nombreComprador = cNombreComprador;
+    producto = cProducto;
 };
 
 //GETTER
 string Comprador::getNombreComprador()
 {
-	return nombreComprador;
+    return nombreComprador;
 };
-Producto Comprador::getProducto()
+Proveedor Comprador::getProducto()
 {
-	return producto;
+    return producto;
 };
 
 //SETTER
-void Comprador::setNombreComprador(string cNombreComprador) 
+void Comprador::setNombreComprador(string cNombreComprador)
 {
-	nombreComprador = cNombreComprador;
+    nombreComprador = cNombreComprador;
 };
-void Comprador::setProducto(Producto cProducto)
+void Comprador::setProducto(Proveedor cProducto)
 {
-	producto = cProducto;
+    producto = cProducto;
 }
-/*void Comprador::comprarStock()
+void Comprador::comprarStock(Proveedor p)
 {
-	//Producto producto1("Vasos", 200);
-	//Proveedor proveedor1("Juanito", producto1, 5);
-	int cantidad;
-	cout << "Cantidad a comprar: " << endl;
-	cin >> cantidad;
+    //Producto producto1("Vasos", 200);
+    //Proveedor proveedor1("Juanito", producto1, 5);
+    int cantidad;
+    cout << "Cantidad a comprar: ";
+    cin >> cantidad;
+    
+    
+    if (cantidad <= p.getStock()){
+        cout << "Compra realizada con exito"<<endl;
+        cout<<"Stock actualizado: "<< (p.getStock() - cantidad)<<endl;
+        
+    }else{
+            cout << "No se pudo realizar la compra"<<endl;}
+    
+};
 
-	if (cantidad <= proveedor1.getStock())
-		cout << "Compra realizada con exito";
-	else
-		cout << "No se pudo realizar la compra";
-};*/
-
-//FUNCIONALIDAD
-
-
-/*bool Comprador::comprarStock(int cComprarStock)
-{
-	if (comprarStock <= getStock())
-		return true;
-	else
-		return false;
-
-	//comprarStock = cComprarStock;
-
-};*/
 Comprador::~Comprador() {};
