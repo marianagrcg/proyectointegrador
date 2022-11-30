@@ -1,31 +1,29 @@
 #pragma once
+
 #include <iostream>
-#include "Producto.h"
 #include <string>
+
 using namespace std;
 
-class Comprador
+class Producto
 {
-private:
-	string nombreComprador;
-	Producto producto;
-public:
-	//CONSTRUCTOR
-	Comprador();
-	Comprador(string cNombreComprador, Producto cProducto);
+    private:
+        string nombreProducto;
+        double precioProducto;
+    public:
+        //CONSTRUCTOR
+        Producto();
+        Producto(string cNombreProducto, double cPrecioProducto);
 
-	//GETTER
-	string getNombreComprador();
-	Producto getProducto();
+        //GETTERS
+        string getNombreProducto();
+        double getPrecioProducto();
 
-	//SETTER
-	void setNombreComprador(string cNombreComprador);
-	void setProducto(Producto cProducto);
-	
-	//FUNCIONALIDAD
-	//void comprarStock();
-	//double precioProducto(Producto)
+        //SETTERS
+        void setNombreProducto(string cNombreProducto);
+        void setPrecioProducto(double cPrecioProducto);
 
-	//DESTRUCTOR
-	~Comprador();
+
+        //DESTRUCTOR
+        ~Producto();
 };
