@@ -1,0 +1,15 @@
+﻿  Comprador.cpp
+  Proveedor.cpp
+  main.cpp
+  Generando código...
+Proveedor.obj : error LNK2005: ya se definió "public: __cdecl Proveedor::Proveedor(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class Producto,int)" (??0Proveedor@@QEAA@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@VProducto@@H@Z) en Comprador.obj
+Proveedor.obj : error LNK2005: ya se definió "public: __cdecl Proveedor::Proveedor(void)" (??0Proveedor@@QEAA@XZ) en Comprador.obj
+Proveedor.obj : error LNK2005: ya se definió "public: __cdecl Proveedor::~Proveedor(void)" (??1Proveedor@@QEAA@XZ) en Comprador.obj
+Proveedor.obj : error LNK2005: ya se definió "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl Proveedor::getNombreProveedor(void)" (?getNombreProveedor@Proveedor@@QEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ) en Comprador.obj
+Proveedor.obj : error LNK2005: ya se definió "public: class Producto __cdecl Proveedor::getProducto(void)" (?getProducto@Proveedor@@QEAA?AVProducto@@XZ) en Comprador.obj
+Proveedor.obj : error LNK2005: ya se definió "public: int __cdecl Proveedor::getStock(void)" (?getStock@Proveedor@@QEAAHXZ) en Comprador.obj
+Proveedor.obj : error LNK2005: ya se definió "public: void __cdecl Proveedor::imprimeStock(void)" (?imprimeStock@Proveedor@@QEAAXXZ) en Comprador.obj
+Proveedor.obj : error LNK2005: ya se definió "public: void __cdecl Proveedor::setNombreProveedor(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?setNombreProveedor@Proveedor@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) en Comprador.obj
+Proveedor.obj : error LNK2005: ya se definió "public: void __cdecl Proveedor::setProducto(class Producto)" (?setProducto@Proveedor@@QEAAXVProducto@@@Z) en Comprador.obj
+Proveedor.obj : error LNK2005: ya se definió "public: void __cdecl Proveedor::setStock(int)" (?setStock@Proveedor@@QEAAXH@Z) en Comprador.obj
+C:\Users\maria\source\repos\Aplicacion\x64\Debug\Aplicacion.exe : fatal error LNK1169: se encontraron uno o más símbolos definidos simultáneamente
