@@ -16,5 +16,7 @@ int main()
     Proveedor proveedor1("Juanito", producto1, 5);
 
     proveedor1.imprimeStock();
+    
+    ggggg
   
 }
