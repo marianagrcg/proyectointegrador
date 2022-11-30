@@ -1,29 +1,31 @@
 #pragma once
-
 #include <iostream>
+#include "Proveedor.hpp"
 #include <string>
-
 using namespace std;
 
-class Producto
+class Comprador
 {
-    private:
-        string nombreProducto;
-        double precioProducto;
-    public:
-        //CONSTRUCTOR
-        Producto();
-        Producto(string cNombreProducto, double cPrecioProducto);
+private:
+    string nombreComprador;
+    Proveedor producto;
+public:
+    //CONSTRUCTOR
+    Comprador();
+    Comprador(string cNombreComprador, Proveedor cProducto);
 
-        //GETTERS
-        string getNombreProducto();
-        double getPrecioProducto();
+    //GETTER
+    string getNombreComprador();
+    Proveedor getProducto();
 
-        //SETTERS
-        void setNombreProducto(string cNombreProducto);
-        void setPrecioProducto(double cPrecioProducto);
+    //SETTER
+    void setNombreComprador(string cNombreComprador);
+    void setProducto(Proveedor cProducto);
+    
+    //FUNCIONALIDAD
+    void comprarStock(Proveedor);
+    //double precioProducto(Producto)
 
-
-        //DESTRUCTOR
-        ~Producto();
+    //DESTRUCTOR
+    ~Comprador();
 };
