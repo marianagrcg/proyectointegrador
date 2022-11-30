@@ -17,6 +17,6 @@ int main()
 
     proveedor1.imprimeStock();
     
-    gggggsafsaffafsfasfasfsafsfass
+
   
 }
