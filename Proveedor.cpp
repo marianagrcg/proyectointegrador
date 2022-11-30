@@ -46,11 +46,10 @@ void Proveedor::setStock(int cStock)
 };
 
 //FUNCIONALIDADES
-void Proveedor::imprimeStock()
+void Proveedor::imprimeStock(Producto)
 {
-	Producto producto1("vaso", 2000);
-	cout << "El stock es: " << stock <<endl;
-	cout << "El precio unitario es: " << producto1.getPrecioProducto() << endl;
+    cout << "El stock es: " << stock <<endl;
+    cout << "El precio unitario es: " << producto.getPrecioProducto() << endl;
 };
 
 //DESTRUCTOR
