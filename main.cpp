@@ -15,7 +15,7 @@ int main()
     Producto producto1("Vasos",120);
     Proveedor proveedor1("Juanito", producto1, 5);
 
-    proveedor1.imprimeStock();
+    proveedor1.imprimeStock(producto1);
     
 
   
