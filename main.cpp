@@ -1,22 +1,25 @@
-// Aplicacion.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
-//
-
 #include <iostream>
 #include <string>
 #include <vector>
-#include "Proveedor.h"
-#include "Comprador.h"
-#include "Producto.h"
+#include "Proveedor.hpp"
+#include "Comprador.hpp"
+#include "Producto.hpp"
 using namespace std;
 
 
 int main()
 {
+    //vector<Proveedor> proveedores;
+    
     Producto producto1("Vasos",120);
+    
     Proveedor proveedor1("Juanito", producto1, 5);
-
+    
+    Comprador comprador1("Daniela",proveedor1);
+    
     proveedor1.imprimeStock(producto1);
     
+    comprador1.comprarStock(proveedor1);
 
   
 }
