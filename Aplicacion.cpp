@@ -7,12 +7,12 @@ using namespace std;
 //COSNTRUCTOR
 Aplicacion::Aplicacion()
 {
-	Provedor proveedores;
+	Proveedor proveedores;
 	Comprador compradores;
 };
 Aplicacion::Aplicacion(Proveedor cProveedores, Comprador cCompradores)
 {
-	Provedor proveedores;
+	Proveedor proveedores;
 	Comprador compradores;
 };
 //GETTERS
