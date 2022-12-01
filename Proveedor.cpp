@@ -1,3 +1,6 @@
+#ifndef Proveedor_h
+#define Proveedor_h
+
 #include <iostream>
 #include <string>
 #include "Proveedor.h"
@@ -52,6 +55,7 @@ void Proveedor::imprimeStock(Producto p)
     cout << "El stock de " << nombreProveedor << " es: " << stock << endl;
     cout << "El precio unitario por pieza es: " << "$" << p.getPrecioProducto() << endl;
 };
+#endif
 
 //DESTRUCTOR
 Proveedor::~Proveedor() {};
