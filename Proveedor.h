@@ -37,4 +37,3 @@ public:
     //DESTRUCTOR
     ~Proveedor();
 };
-
