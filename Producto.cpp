@@ -1,34 +1,57 @@
-#include "Producto.hpp"
+#include <iostream>
+#include <string>
+#include "Proveedor.h"
+#include "Producto.h"
 using namespace std;
 
-Producto::Producto()
+Proveedor::Proveedor()
 {
-    nombreProducto = "";
-    precioProducto = 0;
+    nombreProveedor = "";
+    stock = 0;
+
 };
-Producto::Producto(string cNombreProducto, double cPrecioProducto)
+Proveedor::Proveedor(string cNombreProveedor, Producto cProducto, int cStock)
 {
-    nombreProducto = cNombreProducto;
-    precioProducto = cPrecioProducto;
-}
-//
-string Producto::getNombreProducto()
-{
-    return nombreProducto;
-};
-double Producto::getPrecioProducto()
-{
-    return precioProducto;
-};
-//
-void Producto::setNombreProducto(string cNombreProducto)
-{
-    nombreProducto = cNombreProducto;
+    nombreProveedor = cNombreProveedor;
+    producto = cProducto;
+    stock = cStock;
 };
 
-void Producto::setPrecioProducto(double cPrecioProducto)
+//GETTERS
+string Proveedor::getNombreProveedor()
 {
-    precioProducto = cPrecioProducto;
+    return nombreProveedor;
+};
+Producto Proveedor::getProducto()
+{
+    return producto;
+};
+int Proveedor::getStock()
+{
+    return stock;
 };
 
-Producto::~Producto(){};
+//SETTERS
+void Proveedor::setNombreProveedor(string cNombreProveedor)
+{
+    nombreProveedor = cNombreProveedor;
+};
+void Proveedor::setProducto(Producto cProducto)
+{
+    producto = cProducto;
+};
+void Proveedor::setStock(int cStock)
+{
+    stock = cStock;
+};
+
+//FUNCIONALIDADES
+void Proveedor::imprimeStock(Producto p)
+{
+
+    cout << "El stock de " << nombreProveedor << " es: " << stock << endl;
+    cout << "El precio unitario por pieza es: " << "$" << p.getPrecioProducto() << endl;
+};
+
+//DESTRUCTOR
+Proveedor::~Proveedor() {};
