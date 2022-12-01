@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
-#include "Proveedor.hpp"
-#include "Producto.hpp"
+#include "Proveedor.h"
+#include "Producto.h"
 using namespace std;
 
 Proveedor::Proveedor()
@@ -48,13 +48,10 @@ void Proveedor::setStock(int cStock)
 //FUNCIONALIDADES
 void Proveedor::imprimeStock(Producto p)
 {
-    
-    cout << "El stock de "<< nombreProveedor << " es: " << stock <<endl;
-    cout << "El precio unitario por pieza es: " <<"$"<< p.getPrecioProducto() << endl;
+
+    cout << "El stock de " << nombreProveedor << " es: " << stock << endl;
+    cout << "El precio unitario por pieza es: " << "$" << p.getPrecioProducto() << endl;
 };
 
 //DESTRUCTOR
 Proveedor::~Proveedor() {};
-
-
-
