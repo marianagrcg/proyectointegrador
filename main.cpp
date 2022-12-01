@@ -15,11 +15,12 @@ int main()
     
     Proveedor proveedor1("Juanito", producto1, 5);
     
-    Comprador comprador1("Daniela",proveedor1);
+    Comprador comprador1("Daniela",proveedor1,1000,0);
     
     proveedor1.imprimeStock(producto1);
     
     comprador1.comprarStock(proveedor1);
-
+    
+    comprador1.saldoActualizado(producto1);
   
 }
