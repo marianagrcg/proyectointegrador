@@ -1,37 +1,49 @@
-/*#include <iostream>
+#include <iostream>
 #include <string>
+#include <vector>
 #include "Proveedor.h"
 #include "Aplicacion.h"
 using namespace std;
 
 //COSNTRUCTOR
+
+Aplicacion::~Aplicacion() {};
+
 Aplicacion::Aplicacion()
 {
-	Proveedor proveedores;
-	Comprador compradores;
-};
-Aplicacion::Aplicacion(Proveedor cProveedores, Comprador cCompradores)
-{
-	Proveedor proveedores;
-	Comprador compradores;
-};
-//GETTERS
-Proveedor Aplicacion::getProveedores()
-{
-	return proveedores;
-};
-Comprador  Aplicacion::getCompradores()
-{
-	return compradores;
+	name = "";
 };
 
-//SETTERS
-void Aplicacion::setProveedores(Proveedor cProveedores)
+Aplicacion::Aplicacion(string cName)
 {
-	proveedores = cProveedores;
+	name = cName;
 };
-void Aplicacion::setCompradores(Comprador cCompradores)
+
+string Aplicacion::getName()
 {
-	compradores = cCompradores;
+	return name;
+}
+void Aplicacion::setName(string cName)
+{
+	name = cName;
 };
-Aplicacion::~Aplicacion(){};*/
+
+Proveedor Aplicacion::getProveedor()
+{
+	return Proveedor();
+};
+void Aplicacion::setProveedor(string cNombreProveedor, Producto cProducto, int cStock)
+{
+	Proveedor prov(cNombreProveedor, cProducto, cStock);
+	proveedores.push_back(prov);
+};
+
+Comprador Aplicacion::getComprador()
+{
+	return Comprador();
+};
+void Aplicacion::setComprador(string cNombreComprador, Proveedor cProducto, double cSaldo, int cCantidad)
+{
+	Comprador comp(cNombreComprador, cProducto, cSaldo, cCantidad);
+	compradores.push_back(comp);
+};
