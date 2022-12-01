@@ -1,3 +1,6 @@
+#ifndef Comprador_h
+#define Comprador_h
+
 #include "Comprador.h"
 #include "Proveedor.h"
 #include "Producto.h"
@@ -91,6 +94,7 @@ void Comprador::actualizarStock(Proveedor p) {
     cout << "Actualizacion de stock: " << (p.getStock() - cantidad) << endl;
 };
 
+#endif
 
 
 Comprador::~Comprador() {};
