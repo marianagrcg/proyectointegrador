@@ -3,8 +3,8 @@
 
 #include <iostream>
 #include <string>
-#include "Proveedor.h"
-#include "Producto.h"
+#include "Proveedor.hpp"
+#include "Producto.hpp"
 using namespace std;
 
 Proveedor::Proveedor()
