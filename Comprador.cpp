@@ -37,7 +37,7 @@ double Comprador::getSaldo() {
 };
 
 int Comprador::getCantidad() {
-    
+
     return cantidad;
 };
 
@@ -79,11 +79,11 @@ int Comprador::comprarStock(Proveedor p)
     return a;
 };
 
-void Comprador::saldoActualizado( Producto g) {
+void Comprador::saldoActualizado(Producto g) {
     double saldoNuevo;
     saldoNuevo = (saldo - (cantidad * g.getPrecioProducto()));
     cout << "Saldo restante: $" << saldoNuevo << endl;
-        
+
 };
 
 void Comprador::actualizarStock(Proveedor p) {
