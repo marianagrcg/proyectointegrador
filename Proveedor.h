@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "Producto.hpp"
+#include "Producto.h"
 using namespace std;
 
 /*vector<string> Proveedor;
@@ -12,29 +12,29 @@ vector<string> Proveedor{ "camisetas", "agujetas", "lapices", "espatulas", "cuch
 
 class Proveedor
 {
-    private:
-        string nombreProveedor;
-        Producto producto;
-        int stock;
-    public:
-        //CONSTRUCTOR
-        Proveedor();
-        Proveedor(string cNombreProveedor, Producto cProducto, int cStock);
+private:
+    string nombreProveedor;
+    Producto producto;
+    int stock;
+public:
+    //CONSTRUCTOR
+    Proveedor();
+    Proveedor(string cNombreProveedor, Producto cProducto, int cStock);
 
-        //GETTERS
-        string getNombreProveedor();
-        Producto getProducto();
-        int getStock();
+    //GETTERS
+    string getNombreProveedor();
+    Producto getProducto();
+    int getStock();
 
-        //SETTERS
-        void setNombreProveedor(string cNombreProveedor);
-        void setProducto(Producto cProducto);
-        void setStock(int cStock);
+    //SETTERS
+    void setNombreProveedor(string cNombreProveedor);
+    void setProducto(Producto cProducto);
+    void setStock(int cStock);
 
-        //FUNCIONALIDAD
-        void imprimeStock(Producto);
+    //FUNCIONALIDAD
+    void imprimeStock(Producto);
 
-        //DESTRUCTOR
-        ~Proveedor();
-
+    //DESTRUCTOR
+    ~Proveedor();
 };
+
