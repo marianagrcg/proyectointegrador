@@ -1,7 +1,8 @@
 #pragma once
 #include <iostream>
-#include "Proveedor.h"
-#include "Producto.h"
+#include "Proveedor.hpp"
+#include "Producto.hpp"
+#include "Comprador.hpp"
 #include <string>
 using namespace std;
 
@@ -12,7 +13,7 @@ private:
     Proveedor producto;
     double saldo;
     int cantidad;
-
+    
 public:
     //CONSTRUCTOR
     Comprador();
@@ -21,22 +22,21 @@ public:
     //GETTER
     string getNombreComprador();
     Proveedor getProducto();
-    double getSaldo();
+    double getSaldo(double cSaldo);
     int getCantidad();
-
+    
     //SETTER
     void setNombreComprador(string cNombreComprador);
     void setProducto(Proveedor cProducto);
     void setSaldo(double cSaldo);
-    void setCantidad(int cCantidad);
-
+    void setCantidad();
+    
     //FUNCIONALIDAD
     int comprarStock(Proveedor);
     //double precioProducto(Producto)
-    void saldoActualizado(Producto);
-    //Funcion actualizar
+    double saldoActualizado(Producto);
     void actualizarStock(Proveedor);
-
+    
     //DESTRUCTOR
     ~Comprador();
 };
