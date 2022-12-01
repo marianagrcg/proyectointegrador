@@ -1,4 +1,4 @@
-/*#pragma once
+#pragma once
 #include <iostream>
 #include <string>
 #include "Producto.h"
@@ -9,21 +9,22 @@ using namespace std;
 class Aplicacion
 {
 	private:
-		Proveedor proveedores;
-		Comprador compradores;
+		string name;
+		vector <Proveedor> proveedores;
+		vector <Comprador> compradores;
 	public:
 		//CONSTRUCTOR
 		Aplicacion();
-		Aplicacion(Proveedor cProveedores, Comprador cCompradores);
+		Aplicacion(string cName);
 
-		//GETTERS
-		Proveedor getProveedores();
-		Comprador getCompradores();
+		string getName();
+		Proveedor getProveedor();
+		Comprador getComprador();
 
-		//SETTERS
-		void setProveedores(Proveedor);
-		void setCompradores(Comprador);
+		void setName(string cName);
+		void setProveedor(string cNombreProveedor, Producto cProducto, int cStock);
+		void setComprador(string cNombreComprador, Proveedor cProducto, double cSaldo, int cCantidad);
 
-		//DESTRUCTOR
+
 		~Aplicacion();
-};*/
+}
