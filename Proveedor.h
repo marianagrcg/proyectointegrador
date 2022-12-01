@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "Producto.h"
+#include "Producto.hpp"
 using namespace std;
 
 /*vector<string> Proveedor;
@@ -36,4 +36,3 @@ public:
 
     //DESTRUCTOR
     ~Proveedor();
-};
